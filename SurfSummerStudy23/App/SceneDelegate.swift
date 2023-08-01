@@ -20,9 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController()
         let assemblyBilder = ModuleBuilder()
         let router = Router(navigationController: navigationController, assemblyBilder: assemblyBilder)
-       // START
-        router.START()
-        
+        router.showUserProfile()
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }

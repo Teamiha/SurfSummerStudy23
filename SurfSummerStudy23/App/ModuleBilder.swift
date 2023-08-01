@@ -9,22 +9,21 @@ import UIKit
 
 protocol AssemblyBilderProtocol {
     
-    func createModule1(router: RouterProtocol) -> UIViewController
-    func createModule2(cityName: String?, router: RouterProtocol) -> UIViewController
+    func createUserProfileViewControllerModule(router: RouterProtocol) -> UIViewController
+    
 }
 
 
 class ModuleBuilder: AssemblyBilderProtocol {
     
-    func createModule1(router: RouterProtocol) -> UIViewController {
-        
+    func createUserProfileViewControllerModule(router: RouterProtocol) -> UIViewController {
+        let view = UserProfileViewController()
+        let presenter = UserProfilePresenter(view: view, router: router)
+        view.presenter = presenter
         return view
     }
     
-    func createModule2(router: RouterProtocol) -> UIViewController {
-        
-        return view
-    }
+   
 }
 
 
