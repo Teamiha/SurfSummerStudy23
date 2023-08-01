@@ -5,7 +5,7 @@
 //  Created by Михаил Светлов on 01.08.2023.
 //
 
-import UIKit
+import Foundation
 
 struct MockData {
     let name = "Лохов Михаил Михайлович"
@@ -13,7 +13,7 @@ struct MockData {
     let location = "Ереван"
     let about = "testtesttesttesttest test test test test test testtest test"
     
-    let userPhoto = UIImage(named: "person")
+    let userPhotoName = "person"
     
     let skills: [String] = []
     

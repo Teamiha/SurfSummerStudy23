@@ -22,12 +22,15 @@ protocol UserProfilePresenterProtocol: AnyObject {
     
     func getSkills()
     
+    func getData()
+    
     var name: String? { get set }
     var slogan: String? { get set }
     var location: String? { get set }
     var about: String? { get set }
     var skillList: [String]? { get set }
     var editSkillMode: Bool? { get set }
+    var userPhotoName: String? { get set }
     
     func changeEditSkillMode()
     
@@ -53,12 +56,16 @@ class UserProfilePresenter: UserProfilePresenterProtocol {
     
     var editSkillMode: Bool?
     
+    var userPhotoName: String?
+    
     
     required init(view: UserProfileViewProtocol, router: RouterProtocol) {
         self.view = view
         self.router = router
         getSkills()
+        getData()
     }
+    
     
     
     
@@ -75,6 +82,11 @@ class UserProfilePresenter: UserProfilePresenterProtocol {
     }
     
     func getData() {
+        self.name = MockData().name
+        self.location = MockData().location
+        self.slogan = MockData().slogan
+        self.about = MockData().about
+        self.userPhotoName = MockData().userPhotoName
         
     }
     
