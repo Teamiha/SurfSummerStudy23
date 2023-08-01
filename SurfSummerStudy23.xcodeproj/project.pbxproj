@@ -16,6 +16,7 @@
 		4EE005402A7805A400C72007 /* ModuleBilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0053F2A7805A400C72007 /* ModuleBilder.swift */; };
 		4EE005422A78FDEB00C72007 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE005412A78FDEB00C72007 /* UserProfileViewController.swift */; };
 		4EE005442A78FEAB00C72007 /* UserProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE005432A78FEAB00C72007 /* UserProfilePresenter.swift */; };
+		4EE005462A793E9A00C72007 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE005452A793E9A00C72007 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4EE0053F2A7805A400C72007 /* ModuleBilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBilder.swift; sourceTree = "<group>"; };
 		4EE005412A78FDEB00C72007 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		4EE005432A78FEAB00C72007 /* UserProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePresenter.swift; sourceTree = "<group>"; };
+		4EE005452A793E9A00C72007 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		4EE005342A7803DD00C72007 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				4EE005452A793E9A00C72007 /* MockData.swift */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				4EE005442A78FEAB00C72007 /* UserProfilePresenter.swift in Sources */,
 				4EE005242A78033C00C72007 /* ViewController.swift in Sources */,
 				4EE005202A78033C00C72007 /* AppDelegate.swift in Sources */,
+				4EE005462A793E9A00C72007 /* MockData.swift in Sources */,
 				4EE005222A78033C00C72007 /* SceneDelegate.swift in Sources */,
 				4EE005402A7805A400C72007 /* ModuleBilder.swift in Sources */,
 			);

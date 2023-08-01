@@ -20,15 +20,17 @@ protocol UserProfilePresenterProtocol: AnyObject {
          router: RouterProtocol
         )
     
-    var name: String { get set }
-    var slogan: String { get set }
-    var location: String { get set }
-    var about: String { get set }
+    func getSkills()
+    
+    var name: String? { get set }
+    var slogan: String? { get set }
+    var location: String? { get set }
+    var about: String? { get set }
     var skillList: [String]? { get set }
-    var editSkillMode: Bool { get set }
+    var editSkillMode: Bool? { get set }
     
     func changeEditSkillMode()
-    func getSkills()
+    
     func deleteSkillButtonTaped()
 }
 
@@ -38,7 +40,19 @@ protocol UserProfilePresenterProtocol: AnyObject {
 class UserProfilePresenter: UserProfilePresenterProtocol {
     weak var view: UserProfileViewProtocol?
     var router: RouterProtocol?
+    
     var skillList: [String]?
+    
+    var name: String?
+    
+    var slogan: String?
+    
+    var location: String?
+    
+    var about: String?
+    
+    var editSkillMode: Bool?
+    
     
     required init(view: UserProfileViewProtocol, router: RouterProtocol) {
         self.view = view
@@ -46,26 +60,22 @@ class UserProfilePresenter: UserProfilePresenterProtocol {
         getSkills()
     }
     
-    var name: String
     
-    var slogan: String
-    
-    var location: String
-    
-    var about: String
-    
-    var editSkillMode: Bool
     
     func changeEditSkillMode() {
-        <#code#>
+        
     }
     
     func getSkills() {
-        <#code#>
+        
     }
     
     func deleteSkillButtonTaped() {
-        <#code#>
+        
+    }
+    
+    func getData() {
+        
     }
     
     
