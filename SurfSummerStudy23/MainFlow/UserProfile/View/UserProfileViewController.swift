@@ -94,10 +94,10 @@ class UserProfileViewController: UIViewController {
     
     private lazy var about: UILabel = {
         let about = UILabel()
-        slogan.numberOfLines = 0
-        slogan.text = ""
-        slogan.textAlignment = .center
-        slogan.font = .systemFont(ofSize: 30)
+        about.numberOfLines = 0
+        about.text = ""
+        about.textAlignment = .center
+        about.font = .systemFont(ofSize: 30)
         return about
     }()
     
@@ -143,6 +143,8 @@ class UserProfileViewController: UIViewController {
         view.addSubview(slogan)
         setConstraints()
         setupValues()
+        
+        print(slogan.text)
     }
 }
 
